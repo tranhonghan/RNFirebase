@@ -12,6 +12,11 @@
 		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		1820F59924AF1CFA00F4C997 /* notification4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1820F59424AF1CF800F4C997 /* notification4.mp3 */; };
+		1820F59A24AF1CFA00F4C997 /* alert.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1820F59524AF1CF800F4C997 /* alert.mp3 */; };
+		1820F59B24AF1CFA00F4C997 /* notification3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1820F59624AF1CF900F4C997 /* notification3.mp3 */; };
+		1820F59C24AF1CFA00F4C997 /* notification2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1820F59724AF1CFA00F4C997 /* notification2.mp3 */; };
+		1820F59D24AF1CFA00F4C997 /* notification1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1820F59824AF1CFA00F4C997 /* notification1.mp3 */; };
 		186D28A223F3FBD900D63238 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 186D28A123F3FBD900D63238 /* GoogleService-Info.plist */; };
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
@@ -53,6 +58,11 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = RNFirebase/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = RNFirebase/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = RNFirebase/main.m; sourceTree = "<group>"; };
+		1820F59424AF1CF800F4C997 /* notification4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = notification4.mp3; sourceTree = "<group>"; };
+		1820F59524AF1CF800F4C997 /* alert.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alert.mp3; sourceTree = "<group>"; };
+		1820F59624AF1CF900F4C997 /* notification3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = notification3.mp3; sourceTree = "<group>"; };
+		1820F59724AF1CFA00F4C997 /* notification2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = notification2.mp3; sourceTree = "<group>"; };
+		1820F59824AF1CFA00F4C997 /* notification1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = notification1.mp3; sourceTree = "<group>"; };
 		186D28A123F3FBD900D63238 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		18CAFC4CB808C0991BC5EB1A /* Pods-RNFirebase-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNFirebase-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-RNFirebase-tvOSTests/Pods-RNFirebase-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		24D2501C71DD78F2D43BD59E /* Pods-RNFirebase-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNFirebase-tvOS.release.xcconfig"; path = "Target Support Files/Pods-RNFirebase-tvOS/Pods-RNFirebase-tvOS.release.xcconfig"; sourceTree = "<group>"; };
@@ -139,6 +149,18 @@
 			name = RNFirebase;
 			sourceTree = "<group>";
 		};
+		1820F59324AF1CA700F4C997 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1820F59524AF1CF800F4C997 /* alert.mp3 */,
+				1820F59824AF1CFA00F4C997 /* notification1.mp3 */,
+				1820F59724AF1CFA00F4C997 /* notification2.mp3 */,
+				1820F59624AF1CF900F4C997 /* notification3.mp3 */,
+				1820F59424AF1CF800F4C997 /* notification4.mp3 */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		254D880C1BCDE256C4BF9228 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -181,6 +203,7 @@
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* RNFirebaseTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
+				1820F59324AF1CA700F4C997 /* Resources */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				254D880C1BCDE256C4BF9228 /* Pods */,
 			);
@@ -339,9 +362,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1820F59C24AF1CFA00F4C997 /* notification2.mp3 in Resources */,
+				1820F59A24AF1CFA00F4C997 /* alert.mp3 in Resources */,
+				1820F59B24AF1CFA00F4C997 /* notification3.mp3 in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
+				1820F59924AF1CFA00F4C997 /* notification4.mp3 in Resources */,
 				186D28A223F3FBD900D63238 /* GoogleService-Info.plist in Resources */,
+				1820F59D24AF1CFA00F4C997 /* notification1.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -632,6 +660,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = RNFirebase/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -651,6 +680,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = RNFirebase/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
