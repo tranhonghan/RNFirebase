@@ -106,12 +106,19 @@ class FCMService {
             obj.channelId, obj.channelName,
             firebase.notifications.Android.Importance.High)
             .setDescription(obj.channelDes)
+            .enableVibration(true)
+            // .enableLights(true)
+            .setVibrationPattern([1000, 1000])
+            .setSound(obj.sound);
+    }
+
+    // For Android
+    createChannel = (channel) => {
+        firebase.notifications().android.createChannel(channel);
     }
 
     buildNotification = (obj) => {
-        // For Android
-        firebase.notifications().android.createChannel(obj.channel)
-
+    
         // For Android and IOS
         return new firebase.notifications.Notification()
         .setSound(obj.sound)
@@ -126,6 +133,8 @@ class FCMService {
         .android.setColor(obj.colorBgIcon)
         .android.setPriority(firebase.notifications.Android.Priority.High)
         .android.setVibrate(obj.vibrate)
+        .android.setGroupAlertBehaviour(firebase.notifications.Android.GroupAlert.All)
+        .android.setCategory(firebase.notifications.Android.Category.Alarm)
         //.android.setAutoCancel(true) // Auto cancel after receive notification
     }
 
